@@ -1,7 +1,7 @@
 /**
  * @file dynamicPromptGenerator-en.js
  * @description A standalone module to generate a dynamic and specialized AI prompt.
- * @version 2.0.0
+ * @version 2.0.1
  * @author Your Name/Company
  *
  * This module implements a hardened "Dynamic Prompt Engineering" strategy.

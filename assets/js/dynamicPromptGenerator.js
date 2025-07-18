@@ -1,7 +1,7 @@
 /**
  * @file dynamicPromptGenerator.js
  * @description وحدة مستقلة لتوليد برومبت ذكاء اصطناعي ديناميكي ومخصص.
- * @version 2.0.0
+ * @version 2.0.1
  * @author Your Name/Company
  *
  * هذه الوحدة تقوم بتطبيق استراتيجية "الهندسة الديناميكية للبرومبت" المحصّنة.
