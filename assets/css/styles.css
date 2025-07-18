@@ -1,0 +1,68 @@
+/* ===================================================================
+  Base Stylesheet (styles.css)
+  ===================================================================
+  Contains the primary, direction-agnostic (LTR-first) styles.
+  RTL-specific rules have been moved to rtl-styles.css. */
+
+.analysis-column {
+  background-color: var(--bs-body-bg);
+  border-left: 1px solid var(--bs-border-color);
+  border-right: 1px solid var(--bs-border-color);
+}
+
+/* In LTR, the decorative border is on the left (start) side. */
+
+.entity-card {
+  border-left: 4px solid #667eea;
+  background-color: var(--bs-card-bg);
+}
+
+.schema-suggestion {
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.schema-suggestion:hover {
+  background-color: var(--bs-tertiary-bg);
+}
+
+/* Accessibility Improvement: Visible focus state for custom button-like elements */
+
+.schema-suggestion:focus-visible {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+}
+
+.schema-explanation {
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
+  background-color: var(--bs-tertiary-bg);
+  border-top: 1px dashed var(--bs-border-color);
+}
+
+.code-header {
+  background-color: var(--bs-dark-bg-subtle);
+  color: var(--bs-emphasis-color);
+}
+
+/* CHANGE: Added for better color contrast on prices/important text */
+
+.text-high-contrast-success {
+  color: var(--bs-success-text-emphasis);
+  font-weight: bold;
+}
+
+[data-bs-theme="dark"] .text-high-contrast-success {
+  color: #75b798;
+}
+
+/* Float the breadcrumb separator to the left in LTR and adjust padding. */
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: " / ";
+  float: left;
+  padding-right: 0.5rem;
+  padding-left: 0;
+}
+
